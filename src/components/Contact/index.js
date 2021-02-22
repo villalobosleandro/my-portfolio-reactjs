@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Contact = props => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = () => {
+    const data = {
+      name,
+      email,
+      message
+    }
+
+    console.log('data => ', data);
+  }
 
   return (
     <div>
@@ -25,6 +39,7 @@ export const Contact = props => {
                         className="form-control"
                         placeholder="Name"
                         required="required"
+                        onChange={(e) => setName(e.target.value)}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -37,6 +52,7 @@ export const Contact = props => {
                         className="form-control"
                         placeholder="Email"
                         required="required"
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -50,11 +66,16 @@ export const Contact = props => {
                     rows="4"
                     placeholder="Message"
                     required
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
+                <button 
+                  type="submit" 
+                  onClick={() => handleSubmit} 
+                  className="btn btn-custom btn-lg"
+                >
                   Send Message
                   </button>
               </form>

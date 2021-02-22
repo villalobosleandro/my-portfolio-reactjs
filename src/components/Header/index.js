@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navigation = props => {
+export const Header = props => {
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
