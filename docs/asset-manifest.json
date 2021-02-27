@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/villalobosleandro/my-portfolio-reactjs/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/villalobosleandro/my-portfolio-reactjs/static/js/main.d8194415.chunk.js",
+    "main.js.map": "/villalobosleandro/my-portfolio-reactjs/static/js/main.d8194415.chunk.js.map",
+    "runtime-main.js": "/villalobosleandro/my-portfolio-reactjs/static/js/runtime-main.ae861136.js",
+    "runtime-main.js.map": "/villalobosleandro/my-portfolio-reactjs/static/js/runtime-main.ae861136.js.map",
+    "static/js/2.3f9142c7.chunk.js": "/villalobosleandro/my-portfolio-reactjs/static/js/2.3f9142c7.chunk.js",
+    "static/js/2.3f9142c7.chunk.js.map": "/villalobosleandro/my-portfolio-reactjs/static/js/2.3f9142c7.chunk.js.map",
+    "static/js/3.48a0e899.chunk.js": "/villalobosleandro/my-portfolio-reactjs/static/js/3.48a0e899.chunk.js",
+    "static/js/3.48a0e899.chunk.js.map": "/villalobosleandro/my-portfolio-reactjs/static/js/3.48a0e899.chunk.js.map",
+    "index.html": "/villalobosleandro/my-portfolio-reactjs/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/villalobosleandro/my-portfolio-reactjs/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.3f9142c7.chunk.js.LICENSE.txt": "/villalobosleandro/my-portfolio-reactjs/static/js/2.3f9142c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae861136.js",
+    "static/js/2.3f9142c7.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.d8194415.chunk.js"
+  ]
+}
