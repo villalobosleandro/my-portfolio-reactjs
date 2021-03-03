@@ -1,0 +1,111 @@
+{
+  "data" : [ 
+    {
+      "name" : "Shooping App",
+      "subtitle": "Aplicación móvil",
+      "description" : "Aplicación de una tienda ficticia donde se vende cualquier producto, posee un perfil de administrador para que un usuario pueda crear y publicar categorías y productos.",
+      "images" : [
+        "img/shopping-app/Screenshot_1.png",
+        "img/shopping-app/Screenshot_2.png",
+        "img/shopping-app/Screenshot_3.png",
+        "img/shopping-app/Screenshot_4.png",
+        "img/shopping-app/Screenshot_5.png",
+        "img/shopping-app/Screenshot_6.png"
+      ]
+    }, 
+    {
+      "name" : "Portafolio Angular",
+      "subtitle": "Diseño web",
+      "description" : "Diseño de una web elaborada con angular donde se muestran una cuadrilla con los trabajos realizados",
+      "images" : [
+        "img/portfolio-angular/captura1.png",
+        "img/portfolio-angular/captura2.png",
+        "img/portfolio-angular/captura3.png",
+        "img/portfolio-angular/captura4.png"
+      ]
+    }, 
+    {
+      "name" : "Lista de Podcast",
+      "subtitle": "Diseño web",
+      "description" : "Diseño de una web hecha en reactjs donde muestra un listado de podcast para que el usuario decida cual elegir y disfrutar del contenido.",
+      "images" : [
+        "img/podcast/captura1.png"
+      ]
+    },
+    {
+      "name" : "Shopping App Flutter",
+      "subtitle": "Aplicación móvil",
+      "description" : "Vista de una tienda de ropas y el detalle de un producto hecha en flutter.",
+      "images" : [
+        "img/cart-flutter/captura1.png",
+        "img/cart-flutter/captura2.png"
+      ]
+    },
+    {
+      "name" : "RocketStore",
+      "subtitle": "Aplicación móvil",
+      "description" : "Aplicación móvil hecha para la tienda de RocketStore donde se pueden comprar los productos que la tienda ofrece, tiene un filtrado por categorías, un carrito de compras, listado de facturas, sección de preguntas y comentarios, así como también una vista de notificaciones cuando se responde a una pregunta formulada.",
+      "images" : [
+        "img/rocket-store/Screenshot_1.png",
+        "img/rocket-store/Screenshot_2.png",
+        "img/rocket-store/Screenshot_3.png",
+        "img/rocket-store/Screenshot_4.png",
+        "img/rocket-store/Screenshot_5.png",
+        "img/rocket-store/Screenshot_6.png",
+        "img/rocket-store/Screenshot_7.png",
+        "img/rocket-store/Screenshot_8.png",
+        "img/rocket-store/Screenshot_9.png",
+        "img/rocket-store/Screenshot_10.png"
+      ]
+    },
+    {
+      "name" : "FinoMarket",
+      "subtitle": "Aplicación móvil",
+      "description" : "Aplicación hecha para el restaurante “Q Maiz Pues” donde se puede ordenar los platos, bebidas y otros snacks que ofrece el restaurante.",
+      "images" : [
+        "img/finomarket/captura1.png",
+        "img/finomarket/captura2.png",
+        "img/finomarket/captura3.png",
+        "img/finomarket/captura4.png",
+        "img/finomarket/captura5.png"
+      ]
+    },
+    {
+      "name" : "Fino Inventario",
+      "subtitle": "Aplicación móvil",
+      "description" : "Es una aplicación hecha para la empresa FinoCompany para llevar un control del inventario de la empresa.",
+      "images" : [
+        "img/finoinventario/captura1.png",
+        "img/finoinventario/captura2.png",
+        "img/finoinventario/captura3.png",
+        "img/finoinventario/captura4.png",
+        "img/finoinventario/captura5.png"
+      ]
+    },
+    {
+      "name" : "Fino Balance",
+      "subtitle": "Aplicación móvil",
+      "description" : "Es una aplicación que simula ser un banco por donde se les cancela a los empleados y estos deben hacer sus retiros y consultar su historial de movimientos.",
+      "images" : [
+        "img/balance/captura1.png",
+        "img/balance/captura2.png",
+        "img/balance/captura3.png",
+        "img/balance/captura4.png",
+        "img/balance/captura5.png",
+        "img/balance/captura6.png"
+      ]
+    },
+    {
+      "name" : "Finance",
+      "subtitle": "Aplicación móvil",
+      "description" : "Es una aplicación que simula ser una aseguradora donde se muestran las pólizas disponibles con los montos a cancelar mensualmente, tiene una sección donde el usuario puede firmar digitalmente si esta descuerdo con los términos de la póliza para así finalizar el contrato y concretar la venta de la póliza.",
+      "images" : [
+        "img/finance/captura1.png",
+        "img/finance/captura2.png",
+        "img/finance/captura3.png",
+        "img/finance/captura4.png",
+        "img/finance/captura5.png"
+      ]
+    }
+  ]
+}

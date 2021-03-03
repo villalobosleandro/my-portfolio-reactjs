@@ -1,213 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
+
+import {ModalImagePreview} from './../ModalImagePreview';
+import styles from './Galery.module.css';
+
+import data from './../../utils/data';
 
 export const Gallery = props => {
+    const [open, setOpen] = useState(false);
+    const [elementSelected, setElementSelected] = useState({});
 
-  return (
-    <div id="portfolio" className="text-center">
-      <div className="container">
-        <div className="section-title">
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-            </p>
+    const handleClickOpen = (element) => {
+        setElementSelected(element);
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+
+    return (
+        <div id="portfolio" className="text-center">
+            <div className="container">
+                {
+                    open && (
+                        <ModalImagePreview
+                            open={open}
+                            handleClose={handleClose}
+                            setOpen={setOpen}
+                            element={elementSelected}
+                        />
+                    )
+                }
+                <div className="section-title">
+                    <h2>Gallery</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        duis sed
+                        dapibus leonec.
+                    </p>
+                </div>
+                <div className="row">
+
+                    {
+                        data.data.map((element, index) => {
+                            return(
+                                <div
+                                    key={index}
+                                    className="col-sm-6 col-md-4 col-lg-4"
+                                    onClick={() => handleClickOpen(element)}
+                                >
+                                    <div className={styles.containerProduct}>
+                                        <div className="hover-bg">
+                                            <div className="hover-text">
+                                                <h4>{element.name}</h4>
+                                            </div>
+                                            <img
+                                                src={element.images[0]}
+                                                className={styles.imageResponsive}
+                                                alt="Project Title"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
+
+                </div>
+            </div>
         </div>
-        <div className="row">
-          <div className="portfolio-items">
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/01-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/01-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/02-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/02-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/03-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/03-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/04-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/04-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/05-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/05-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/06-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/06-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/07-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/07-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/08-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/08-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 col-lg-4">
-              <div className="portfolio-item">
-                <div className="hover-bg">
-                  {" "}
-                  <a
-                    href="img/portfolio/09-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div className="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/09-small.jpg"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
 
 }
 
